@@ -1,0 +1,21 @@
+.mole {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  background: rgb(152, 96, 0);
+  position: relative;
+  cursor: pointer;
+
+  &.active::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 25px;
+    height: 25px;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+  }
+}
